@@ -1,4 +1,6 @@
 *{
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -8,8 +10,32 @@ body{
     font-size: 1rem;
     line-height: 1.5;
     color: #333;
-    overflow-x: hidden; 
+    overflow-x: hidden;
+    font-family: 'Lacquer', sans-serif;
+ 
 }
+
+h1{
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    left: 37%;
+    
+}
+
+h2{
+    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeOEvc45EZwYPbrujku-fcMHDejstc5-X06lhGeNvnC2r1ap0REA");
+    background-repeat: no-repeat;
+    background-size: 100% auto; */
+    background: #b4b7e7;
+    text-align: center;
+    border: left;
+    border: 1px solid black;
+    font-family: 'Lacquer', sans-serif;
+    font-family: 'Long Cang', cursive;
+    font-family: 'Concert One', cursive;
+}
+
 
 .v-header{
     height: auto;
@@ -18,6 +44,8 @@ body{
     color: white;
 
 }
+
+
 
 .container{
     max-width: 960px;
@@ -33,24 +61,23 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    height:100vh;
+    height:100%;
     overflow: hidden;
 }
 
 .fullscreen-video-wrap video{
     min-width: 100%;
     min-height: 100%;
+    
 }
 
 .header-overlay{
     height: 100vh;
     width: 100vw;
-    position: absolute;
-    top: 0;
-    left: 0;
     background: #225470;
     z-index: 1;
-    opacity: .40;
+    opacity: .15;
+
 }
 
 .header-content{
@@ -66,19 +93,30 @@ body{
     align-content: center
 }
 
-.header-content p{
-    font-size:1.5rem;
-    display: block;
-    padding-bottom: 2rem;
-    justify-content: center;
-    align-content: center;
+.newspaper{
+    column-gap: 40px;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+    column-rule-color: lightblue;
 
 }
 
-.btn{
-    background: #225470;
-    color: #fff;
-    font-size: 1.2rem;
-    padding: 1rem 2rem;
-}
+h2, html {
+    height: 100%;
+  }
+  
+  .parallax { 
+    /* The image used */
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/8a/Exterior_of_Holy_Trinity.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
+  
